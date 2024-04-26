@@ -25,13 +25,8 @@ def main():
     while True:
         frame = cam.capture_array()
         controlkey = cv2.waitKey(1)
-        if ret:
-            oframe = detect_pedestrian(frame)
-            cv2.imshow("frame", oframe)
-        else:
-            break
-        if controlkey == ord("q"):
-            break
+        oframe = detect_pedestrian(frame)
+        cv2.imshow("frame", oframe)
     oframe.release()
     cv2.destroyAllWindows()
 if __name__ == "__main__":
