@@ -1,6 +1,6 @@
 import cv2
 
-cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
+cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 def detect_pedestrian(frame):
     from espeak import espeak
     import time
