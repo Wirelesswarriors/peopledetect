@@ -1,10 +1,10 @@
 import cv2
 
-cars_cascade = cv2.CascadeClassifier("haarcascade_fullbody.xml")
+cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
 def detect_pedestrian(frame):
     from espeak import espeak
     import time
-    cars = cars_cascade.detectMultiScale(frame, 1.15, 4)
+    pedestrian = cascade.detectMultiScale(frame, 1.15, 4)
     for (x, y, w, h) in pedestrian:
         cv2.rectangle(frame, (x, y), (x+w, y+h), color=(0, 255, 255), thickness=2)
         time.sleep(1)
