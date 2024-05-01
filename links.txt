@@ -1,0 +1,16 @@
+
+https://www.geeksforgeeks.org/how-to-detect-shapes-in-images-in-python-using-opencv/
+https://www.w3schools.com/python/python_datetime.asp 
+https://www.driver-vehicle-licensing.api.gov.uk
+https://www.geeksforgeeks.org/send-an-sms-message-with-python/
+https://www.twilio.com/docs/messaging/quickstart
+https://medium.com/nanonets/a-comprehensive-guide-to-ocr-with-tesseract-opencv-and-python-fd42f69e8ca8 
+https://pypi.org/project/python-espeak/
+https://raspberrytips.com/picamera2-raspberry-pi/
+https://pythonguides.com/send-email-using-python/ 
+https://forums.raspberrypi.com/viewtopic.php?t=369522 
+https://www.imagemagick.org/Usage/transform/ 
+https://www.geeksforgeeks.org/text-detection-and-extraction-using-opencv-and-ocr/ 
+https://medium.com/analytics-vidhya/image-simplification-through-binarization-in-opencv-1292d91cae12 
+https://www.geeksforgeeks.org/how-to-detect-shapes-in-images-in-python-using-opencv/ 
+https://www.geeksforgeeks.org/python-denoising-of-colored-images-using-opencv/ 
