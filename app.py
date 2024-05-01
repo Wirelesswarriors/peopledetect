@@ -1,6 +1,6 @@
 import cv2
 
-cars_cascade = cv2.CascadeClassifier("C:\Users\1921875\OneDrive - Dundee and Angus College\Documents\Python\iot\haarcascade_fullbody.xml")
+cars_cascade = cv2.CascadeClassifier("haarcascade_fullbody.xml")
 def detect_pedestrian(frame):
     from espeak import espeak
     import time
