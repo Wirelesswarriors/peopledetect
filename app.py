@@ -1,8 +1,24 @@
 import cv2
 
 cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+
+def save():
+    import datetime
+    from picamera2 import Picamera2
+    cam = Picamera2()
+    current = datetime.datetime.now()
+    filen = ""
+    ops = ["%Y", "%m", "%d", "%H", "%M", "%S"]
+    for loop in range(6):
+        filen = filen + current.strftime(ops[loop])
+
+    filen = filen[:8] + "-" + filen[-6:]
+    with open("log.txt", 'w') as file:
+        file.write(f"PERSON DETECTED AT {filen} \n")
+    filen = filen + ".png"
+    cam.capture(filen)
+    
 def detect_pedestrian(frame):
-    from espeak import espeak
     import time
     pedestrian = cascade.detectMultiScale(frame, 1.15, 4)
     for (x, y, w, h) in pedestrian:
